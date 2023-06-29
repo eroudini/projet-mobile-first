@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/w3css.css">
+    <title>Mobile First Statique</title>
+    <html prefix="og: https://ogp.me/ns#">
+    <meta property="og:title" content="Mobile First Statique" />
+    <meta property="og:type" content="video.movie" />
+    <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
+    <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        main {
+            margin-top: 165px;
+        }
+
+        section {
+            scroll-margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--DEBUT SECTION HEADER-->
+
+    <header class="w3-top w3-white">
+
+
+        <!--DEBUT NAV-->
+
+
+        <nav id="desktopnav" class="w3-bar w3-border-bottom"> <!-- DEBUT DESTOK NAVBAR-->
+            <a href="" class="w3-bar-item w3-button w3-hide-large w3-hide-medium w3-right">
+
+            </a>
+
+            <a href="#home" onclick="homeHideNavbar()" class="w3-bar-item w3-button w3-hide-small">Home</a>
+            <a href="#about" class="w3-bar-item w3-button w3-hide-small">About</a>
+            <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small">Portfolio</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-hide-small">Contact</a>
+
+        </nav> <!-- FIN DESTOK NAVBAR-->
+
+        <a href="javascript:void(0)" onclick="toogleNavbar()" class="w3-button w3-hide-large w3-hide-medium w3-right">
+            <i class="fa fa-bars"></i>
+
+
+            <nav id="mobileNav" class="w3-bar-block w3-white w3-hide-large w3-hide-medium w3-hide">
+
+
+                <a href="#about" onclick="toogleNavbar()" class="w3-bar-item w3-button">About</a>
+                <a href="#portfolio" onclick="toogleNavbar()" class="w3-bar-item w3-button">Portfolio</a>
+                <a href="#contact" onclick="toogleNavbar()" class="w3-bar-item w3-button">Contact</a>
+
+            </nav> <!--FIN NAV-->
+        </a>
+
+    </header> <!--FIN HEADER-->
+
+    <main class="w3-container">
+
+        <section class="home"></section>
+
+        <section id="about">
+            <h1>About</h1> <!--DEBUT SECTION ABOUT-->
+
+
+            <div class="w3-row">
+
+
+                <div class="w3-third w3-padding">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id deleniti ad tenetur nemo corporis,
+                    deserunt blanditiis officia exercitationem consequatur possimus mollitia error amet laborum,
+                    molestias rem totam voluptatem ipsum magni!
+                    Accusantium hic tenetur autem ipsa officia quia, quibusdam ut laboriosam cum, assumenda ab,
+                    distinctio alias? Dolor, voluptate officiis perferendis aut itaque corrupti tenetur ratione?
+                    Pariatur beatae adipisci quaerat mollitia tempore!
+                    Aperiam in animi odit, iste quos vero nesciunt velit, ducimus explicabo quam, placeat eos aut
+                    voluptatem blanditiis illum quia at veniam repellat consequuntur distinctio non nihil. Quos culpa
+                    non itaque?
+                    Voluptate, earum iste quam et corrupti atque, nam quas, eaque cumque quisquam voluptas harum
+                    repellat repellendus adipisci dolores placeat numquam molestiae id laboriosam velit error eos dolore
+                    neque. Odit, fuga.
+                    Labore facilis animi eius amet rem ea, inventore voluptates neque ducimus ab maiores! Tempore iste
+                    dolor, omnis, nisi est provident consequatur repellendus officiis placeat quisquam natus? Ducimus
+                    inventore veritatis rerum.
+
+                </div>
+                <div class="w3-third"><img src="assets/images/bird-g67715b31a_1280.jpg" alt="" class="w3-image"></div>
+
+                <div class="w3-third w3-padding">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id deleniti ad tenetur nemo corporis,
+                    deserunt blanditiis officia exercitationem consequatur possimus mollitia error amet laborum,
+                    molestias rem totam voluptatem ipsum magni!
+                    Accusantium hic tenetur autem ipsa officia quia, quibusdam ut laboriosam cum, assumenda ab,
+                    distinctio alias? Dolor, voluptate officiis perferendis aut itaque corrupti tenetur ratione?
+                    Pariatur beatae adipisci quaerat mollitia tempore!
+                    Aperiam in animi odit, iste quos vero nesciunt velit, ducimus explicabo quam, placeat eos aut
+                    voluptatem blanditiis illum quia at veniam repellat consequuntur distinctio non nihil. Quos culpa
+                    non itaque?
+                    Voluptate, earum iste quam et corrupti atque, nam quas, eaque cumque quisquam voluptas harum
+                    repellat repellendus adipisci dolores placeat numquam molestiae id laboriosam velit error eos dolore
+                    neque. Odit, fuga.
+                    Labore facilis animi eius amet rem ea, inventore voluptates neque ducimus ab maiores! Tempore iste
+                    dolor, omnis, nisi est provident consequatur repellendus officiis placeat quisquam natus? Ducimus
+                    inventore veritatis rerum.
+                </div>
+
+                <!--FIN SECTION ABOUT-->
+
+
+
+
+
+                <div class="w3-row-padding">
+                    <section id="portfolio">
+                        <h1>Portfolio</h1>
+
+                        <article class="w3-col m4 w3-center w3-border">
+                            <h3>1</h3>
+                            <img src="assets/images/mountain-g01eca6148_1280.jpg" alt="mountain" class="w3-image">
+                        </article>
+
+                        <article class="w3-col m4 w3-center w3-border">
+                            <h3>2</h3>
+                            <img src="assets/images/mountain-g01eca6148_1280.jpg" alt="mountain" class="w3-image">
+
+
+                        </article>
+
+                        <article class="w3-col m4 w3-center w3-border">
+                            <h3>3</h3>
+                            <img src="assets/images/mountain-g01eca6148_1280.jpg" alt="mountain" class="w3-image">
+                        </article>
+
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea non et sed assumenda deserunt quam ut
+                    quae, incidunt adipisci architecto tempore quis, nihil ullam cumque, nobis consequuntur ex aperiam
+                    culpa.
+                    Quibusdam labore minus, adipisci sapiente vitae deserunt ipsam, harum accusamus ea dolorem, hic vel
+                    perferendis ab. Corrupti aut repudiandae enim repellendus temporibus ipsam magni, blanditiis
+                    reprehenderit id veniam? Voluptatum, deleniti?</p>
+            </div>
+
+        </section>
+
+
+        <section id="contact">
+            <h1>Contact</h1>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et in id sunt voluptates impedit molestiae eaque
+                nemo sequi non repellat inventore tempore nesciunt fuga, veniam aliquid iusto quibusdam deserunt
+                nostrum?
+                Maxime eum aperiam sit asperiores suscipit reprehenderit optio tempore recusandae velit dolores quasi
+                totam vitae, molestiae provident enim repellat magni nesciunt reiciendis soluta facere aut. Aperiam
+                cumque assumenda magnam error!
+                Illo animi vitae quam esse ex! Fugiat enim vitae, tempore facilis minima, delectus laborum, ut ratione
+                assumenda quae neque sit qui itaque! Ipsa voluptatum neque illo dolores inventore dicta impedit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quia ex nesciunt explicabo? Quasi odit
+                libero magnam, quisquam temporibus optio delectus corrupti tenetur. Error vero saepe magni ut, deleniti
+                eius.
+                Eligendi perferendis voluptates consequuntur tenetur quaerat quae possimus explicabo? Modi libero
+                dignissimos aspernatur, sequi quasi adipisci maiores numquam esse aliquam quos laboriosam officiis
+                reiciendis. Eius, id quo? Repudiandae, sequi neque.
+                Pariatur architecto ratione est odio facilis. Excepturi ut, quam itaque suscipit explicabo
+                reprehenderit, ad similique, tempora assumenda error nostrum quae tenetur minus sed earum eaque
+                laudantium odio inventore eligendi ducimus.
+                Possimus nostrum consectetur fuga ut soluta! Unde fugiat perferendis iusto repellat hic incidunt
+                inventore dolor natus, magni eius soluta sunt dolores, nihil excepturi a. Doloribus odit aut quod
+                numquam officiis.
+                Illo impedit molestias, cupiditate dolorum dolore itaque ab soluta deserunt consectetur esse eaque sint,
+                corporis error sed cumque, quasi obcaecati? Eum consequuntur eaque beatae deserunt eligendi nemo alias
+                quos quam!
+                Odio molestias laborum hic! Cum ipsam praesentium omnis est dicta culpa ipsum quasi sequi accusantium
+                magnam consequatur, alias quis ab, nobis perferendis voluptate distinctio sit minima, officia totam
+                fugit. Quod!
+                Nulla, ipsam accusamus sunt natus soluta officia minus, quibusdam veritatis harum enim aliquid molestias
+                praesentium! Culpa veritatis amet nesciunt saepe suscipit voluptas. Vitae tempora mollitia excepturi
+                laudantium esse nisi eaque?
+                Quibusdam consequuntur eaque atque nostrum cum. Laborum omnis similique eius ex rem iusto, dolore porro
+                amet harum tempore, animi provident expedita, totam sequi dignissimos repudiandae architecto neque. Ad,
+                in assumenda!
+                Pariatur incidunt fuga ut sint hic laudantium praesentium sit iusto nulla maiores possimus, illum
+                veritatis consectetur explicabo? Aut harum quis reiciendis delectus voluptates sequi, aliquam minima, id
+                quidem soluta explicabo?
+                Ab, architecto. Dicta tempore nesciunt, necessitatibus voluptatem consectetur doloribus adipisci ratione
+                ullam ipsum fugit atque perspiciatis eos cum. Quasi sint eaque deserunt nihil sit? Nam commodi corporis
+                accusamus sit ipsa.</p>
+
+        </section>
+
+    </main>
+
+    <footer></footer>
+
+    <script>
+        function toogleNavbar() {
+            var nav = document.getElementById("mobileNav");
+            nav.classList.toggle("w3-show");
+            console.log(nav.classList);
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>
