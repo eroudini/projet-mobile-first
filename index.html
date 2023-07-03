@@ -4,216 +4,483 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <title>My Mobile First Static Project</title>
+    <meta name="description" content="One page website using simple css class for mobile optimization...   ">
+    <meta property="og:title" content="My Mobile First Static Project" />
+    <meta property="og:description" content="One page website using simple css class for mobile optimization..." />
+    <link rel="shortcut icon" href="assets/images/logo.svg" type="favicon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="assets/css/w3css.css">
-    <title>Mobile First Statique</title>
-    <html prefix="og: https://ogp.me/ns#">
-    <meta property="og:title" content="Mobile First Statique" />
-    <meta property="og:type" content="video.movie" />
-    <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
-    <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
     <style>
         html {
             scroll-behavior: smooth;
         }
 
         main {
-            margin-top: 165px;
+
+            background-image: url(assets/images/winter-landscape-2571788_1280.jpg);
+
+        }
+
+        #about .title {
+            font-size: 70px;
         }
 
         section {
             scroll-margin-top: 50px;
         }
+
+        #home {
+            height: 350px;
+            background-image: url("assets/images/wepik-export-20230703143118plf2.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        section h2 {
+            text-align: center
+        }
+
+        #btnToTop {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 3;
+        }
+
+
+        #title {
+            font-family: 'Lobster', cursive;
+            font-family: 'Metal Mania', cursive;
+            font-family: 'Pacifico', cursive;
+            font-size: 50px;
+            color: rgb(0, 0, 0);
+
+        }
+
+        #title2 {
+            font-family: 'Lobster', cursive;
+            font-family: 'Metal Mania', cursive;
+            font-family: 'Pacifico', cursive;
+            font-size: 50px;
+            color: rgb(0, 0, 0);
+        }
+
+        #title3 {
+            font-family: 'Lobster', cursive;
+            font-family: 'Metal Mania', cursive;
+            font-family: 'Pacifico', cursive;
+            font-size: 50px;
+            color: rgb(0, 0, 0);
+        }
+
+        #about {
+            font-family: 'Metal Mania', cursive;
+            font-family: 'Pacifico', cursive;
+            font-size: 20px;
+        }
+
+        #portfolio {
+            font-family: 'Metal Mania', cursive;
+            font-family: 'Pacifico', cursive;
+            font-size: 20px;
+        }
+
+        #contact {
+            font-family: 'Metal Mania', cursive;
+            font-family: 'Pacifico', cursive;
+            font-size: 20px;
+        }
+
+        .w3-display-middle {
+            font-weight: bold;
+
+        }
+
+        #home h1 {
+            color: white;
+            font-size: 90px;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+        h1,
+        h2 {
+            font-family: 'Yellowtail', cursive;
+
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap');
+
+        p {
+            font-family: 'Bacasime Antique', serif;
+        }
+
+       
+
+        .container {
+            max-width: 1170px;
+            margin: auto;
+        }
+
+        .foot-coloumn {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .footer {
+            background-color: #000000;
+            padding: 70px 0;
+            
+        }
+
+        footer.col {
+            width: 25%;
+            padding: 0 15px;
+        }
+
+        .footer-col h4 {
+            font-size: 18px;
+            color: #ffffff;
+            text-transform: capitalize;
+            margin-bottom: 35px;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .footer-col h4::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: #e91e63;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+
+        .Social-links {
+            font-size: 30px;
+        }
+
+
+        .footer-col ul li:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            font-size: 16px;
+            text-transform: capitalize;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 300;
+            color: #bbbbbb;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        .footer-col .social-links a {
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: rgba(255, 255, 255, 0.2);
+            margin: 0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: #ffffff;
+            transition: all 0.5s ease;
+        }
+
+        .footer-col .social-links a:hover {
+            color: #24262b;
+            background-color: #ffffff;
+        }
+
+        .footer-col {
+            padding: 3%;
+            color: white;
+        }
+
+        .CCI{
+            font-size: 18px;
+            font-style: italic;
+        }
+
+        footer {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        /*responsive*/
+        @media(max-width: 767px) {
+            .footer-col {
+                width: 50%;
+                margin-bottom: 30px;
+            }
+        }
+
+        @media(max-width: 574px) {
+            .footer-col {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 
 <body>
-
-    <!--DEBUT SECTION HEADER-->
-
-    <header class="w3-top w3-white">
-
-
-        <!--DEBUT NAV-->
-
-
-        <nav id="desktopnav" class="w3-bar w3-border-bottom"> <!-- DEBUT DESTOK NAVBAR-->
-            <a href="" class="w3-bar-item w3-button w3-hide-large w3-hide-medium w3-right">
-
+    <!-- HEADER START -->
+    <header class="w3-top w3-black">
+        <nav id="desktopNav" class="w3-bar w3-border-bottom">
+            <a href="javascript:void(0)" onclick="toogleNavbar()"
+                class="w3-bar-item w3-button w3-hide-large w3-hide-medium w3-right">
+                <i class="fa fa-bars"></i>
             </a>
-
-            <a href="#home" onclick="homeHideNavbar()" class="w3-bar-item w3-button w3-hide-small">Home</a>
+            <a href="#home" onclick="homeHideNavbar()" class="w3-bar-item w3-button">
+                <img style="width: 30px;" src="assets/images/logo.svg" alt=""></a>
             <a href="#about" class="w3-bar-item w3-button w3-hide-small">About</a>
             <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small">Portfolio</a>
             <a href="#contact" class="w3-bar-item w3-button w3-hide-small">Contact</a>
+        </nav>
 
-        </nav> <!-- FIN DESTOK NAVBAR-->
+        <nav id="mobileNav" class="w3-bar-block w3-white w3-hide-large w3-hide-medium w3-hide w3-animate-top">
+            <a href="#about" onclick="toogleNavbar()" class="w3-bar-item w3-button">About</a>
+            <a href="#portfolio" onclick="toogleNavbar()" class="w3-bar-item w3-button">Portfolio</a>
+            <a href="#contact" onclick="toogleNavbar()" class="w3-bar-item w3-button">Contact</a>
+        </nav>
+    </header>
+    <!-- HEADER END -->
 
-        <a href="javascript:void(0)" onclick="toogleNavbar()" class="w3-button w3-hide-large w3-hide-medium w3-right">
-            <i class="fa fa-bars"></i>
+    <!-- HOME SECTION START -->
+    <section id="home" class="w3-display-container">
+        <h1 class="w3-display-middle w3-center" style="font-size: 70px; color: rgba(255, 255, 255, 0.979);">MY MOBILE
+            WEBSITE</h1>
+    </section>
 
+    <button id="btnToTop" class="w3-hide w3-black w3-animate-opacity">
+        <a href="#"><i class="fa fa-arrow-up fa-4x"></i></a>
+    </button>
 
-            <nav id="mobileNav" class="w3-bar-block w3-white w3-hide-large w3-hide-medium w3-hide">
-
-
-                <a href="#about" onclick="toogleNavbar()" class="w3-bar-item w3-button">About</a>
-                <a href="#portfolio" onclick="toogleNavbar()" class="w3-bar-item w3-button">Portfolio</a>
-                <a href="#contact" onclick="toogleNavbar()" class="w3-bar-item w3-button">Contact</a>
-
-            </nav> <!--FIN NAV-->
-        </a>
-
-    </header> <!--FIN HEADER-->
-
+    <!-- MAIN START -->
     <main class="w3-container">
 
-        <section class="home"></section>
-
-        <section id="about">
-            <h1>About</h1> <!--DEBUT SECTION ABOUT-->
-
-
+        <!-- ABOUT SECTION START -->
+        <section data-aos="fade-right" id="about">
+            <h2 id="title">ABOUT</h2>
             <div class="w3-row">
-
-
-                <div class="w3-third w3-padding">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id deleniti ad tenetur nemo corporis,
-                    deserunt blanditiis officia exercitationem consequatur possimus mollitia error amet laborum,
-                    molestias rem totam voluptatem ipsum magni!
-                    Accusantium hic tenetur autem ipsa officia quia, quibusdam ut laboriosam cum, assumenda ab,
-                    distinctio alias? Dolor, voluptate officiis perferendis aut itaque corrupti tenetur ratione?
-                    Pariatur beatae adipisci quaerat mollitia tempore!
-                    Aperiam in animi odit, iste quos vero nesciunt velit, ducimus explicabo quam, placeat eos aut
-                    voluptatem blanditiis illum quia at veniam repellat consequuntur distinctio non nihil. Quos culpa
-                    non itaque?
-                    Voluptate, earum iste quam et corrupti atque, nam quas, eaque cumque quisquam voluptas harum
-                    repellat repellendus adipisci dolores placeat numquam molestiae id laboriosam velit error eos dolore
-                    neque. Odit, fuga.
-                    Labore facilis animi eius amet rem ea, inventore voluptates neque ducimus ab maiores! Tempore iste
-                    dolor, omnis, nisi est provident consequatur repellendus officiis placeat quisquam natus? Ducimus
-                    inventore veritatis rerum.
-
+                <div class="w3-half">
+                    <img src="assets/2303.w026.n002.3373B.p1.3373.jpg" alt="exemple de code HTML" class="w3-image">
                 </div>
-                <div class="w3-third"><img src="assets/images/bird-g67715b31a_1280.jpg" alt="" class="w3-image"></div>
+                <div class="w3-half w3-padding">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo voluptatum impedit qui
+                        accusamus natus quam quis eius sit magni, odit asperiores! Ex alias unde soluta consequuntur
+                        autem accusamus aliquid debitis, dolorem aut rerum esse quos, quisquam excepturi dolore
+                        voluptatibus laudantium fugit cumque, ab reiciendis ducimus voluptatem mollitia. Beatae nihil
+                        nostrum ut earum accusantium alias autem ipsa debitis, quod dicta, voluptatem molestiae?
+                        Tempora, accusantium nemo quibusdam vitae quos nesciunt pariatur velit accusamus totam explicabo
+                        excepturi fuga fugit ab voluptas. Architecto modi iste ipsam similique ab at neque, commodi
+                        quos. Eligendi, beatae. Suscipit voluptatibus culpa </p>
 
-                <div class="w3-third w3-padding">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id deleniti ad tenetur nemo corporis,
-                    deserunt blanditiis officia exercitationem consequatur possimus mollitia error amet laborum,
-                    molestias rem totam voluptatem ipsum magni!
-                    Accusantium hic tenetur autem ipsa officia quia, quibusdam ut laboriosam cum, assumenda ab,
-                    distinctio alias? Dolor, voluptate officiis perferendis aut itaque corrupti tenetur ratione?
-                    Pariatur beatae adipisci quaerat mollitia tempore!
-                    Aperiam in animi odit, iste quos vero nesciunt velit, ducimus explicabo quam, placeat eos aut
-                    voluptatem blanditiis illum quia at veniam repellat consequuntur distinctio non nihil. Quos culpa
-                    non itaque?
-                    Voluptate, earum iste quam et corrupti atque, nam quas, eaque cumque quisquam voluptas harum
-                    repellat repellendus adipisci dolores placeat numquam molestiae id laboriosam velit error eos dolore
-                    neque. Odit, fuga.
-                    Labore facilis animi eius amet rem ea, inventore voluptates neque ducimus ab maiores! Tempore iste
-                    dolor, omnis, nisi est provident consequatur repellendus officiis placeat quisquam natus? Ducimus
-                    inventore veritatis rerum.
+
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Cumque voluptates iusto illo dolorem natus dolores, earum est ipsum, molestias corrupti quos cum
+                        at nisi tempora excepturi ducimus praesentium, iste minima?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, sed rem ipsam, cumque veritatis,
+                        eos voluptatum animi debitis labore impedit suscipit qui corporis molestiae consequuntur nulla
+                        culpa cum quos! Totam.
+                        Quam repellendus ducimus hic dolore optio dolorem voluptatum, doloremque explicabo, soluta
+                        debitis ab numquam. Rerum, at officiis dicta praesentium dolore nihil molestias ea et! Quod,
+                        nostrum repellat. Minima, nobis reprehenderit.
+                        Deserunt placeat vitae vel nobis aliquam ut dolorem cum. Nesciunt nisi corrupti possimus
+                        eveniet, asperiores quibusdam adipisci accusantium repudiandae non maiores quisquam perferendis
+                        tenetur minima dolor quae, pariatur consectetur animi.</p>
                 </div>
+            </div>
+        </section>
+        <!-- PORTFOLIO SECTION START -->
+        <section data-aos="flip-right" id="portfolio">
+            <h2 id="title2">PORTFOLIO</h2>
 
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis numquam impedit odit, excepturi quas sed velit cupiditate ex quisquam unde maiores commodi dicta eum molestiae sequi. Tempore, voluptates? Omnis, aliquid.</p>
-
-                <!--FIN SECTION ABOUT-->
-
-
-
-
-
-                <div class="w3-row-padding">
-                    <section id="portfolio">
-                        <h1>Portfolio</h1>
-
-                        <article class="w3-col m4 w3-center w3-border">
-                            <h3>1</h3>
-                            <img src="assets/images/mountain-g01eca6148_1280.jpg" alt="mountain" class="w3-image">
-                        </article>
-
-                        <article class="w3-col m4 w3-center w3-border">
-                            <h3>2</h3>
-                            <img src="assets/images/mountain-g01eca6148_1280.jpg" alt="mountain" class="w3-image">
-
-
-                        </article>
-
-                        <article class="w3-col m4 w3-center w3-border">
-                            <h3>3</h3>
-                            <img src="assets/images/mountain-g01eca6148_1280.jpg" alt="mountain" class="w3-image">
-                        </article>
-
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea non et sed assumenda deserunt quam ut
-                    quae, incidunt adipisci architecto tempore quis, nihil ullam cumque, nobis consequuntur ex aperiam
-                    culpa.
-                    Quibusdam labore minus, adipisci sapiente vitae deserunt ipsam, harum accusamus ea dolorem, hic vel
-                    perferendis ab. Corrupti aut repudiandae enim repellendus temporibus ipsam magni, blanditiis
-                    reprehenderit id veniam? Voluptatum, deleniti?</p>
+            <div class="w3-row-padding">
+                <article class="w3-col m4 w3-center">
+                    <div class="w3-card">
+                        <h3>Beau Coucher de Soleil</h3>
+                        <img src="assets/images/sunset-ga6ca95a57_1280.jpg" alt="Beau Coucher de Soleil"
+                            class="w3-image">
+                    </div>
+                </article>
+                <article class="w3-col m4 w3-center">
+                    <div class="w3-card">
+                        <h3>Beau Coucher de Soleil</h3>
+                        <img src="assets/images/sunset-ga6ca95a57_1280.jpg" alt="Beau Coucher de Soleil"
+                            class="w3-image">
+                    </div>
+                </article>
+                <article class="w3-col m4 w3-center">
+                    <div class="w3-card">
+                        <h3>Beau Coucher de Soleil</h3>
+                        <img src="assets/images/sunset-ga6ca95a57_1280.jpg" alt="Beau Coucher de Soleil"
+                            class="w3-image">
+                    </div>
+                </article>
             </div>
 
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo voluptatum impedit qui accusamus
+                natus quam quis eius sit magni, odit asperiores! Ex alias unde soluta consequuntur autem accusamus
+                aliquid debitis, dolorem aut rerum esse quos, quisquam excepturi dolore voluptatibus laudantium fugit
+                cumque, ab reiciendis ducimus voluptatem mollitia. Beatae nihil nostrum ut earum accusantium alias autem
+                ipsa debitis, quod dicta, voluptatem molestiae? Tempora, accusantium nemo quibusdam vitae quos nesciunt
+                pariatur velit accusamus totam explicabo excepturi fuga fugit ab voluptas. Architecto modi iste ipsam
+                similique ab at neque, commodi quos. Eligendi, beatae. Suscipit voluptatibus culpa tempora. Delectus
+                dignissimos eos culpa aliquam provident cum voluptatibus, laboriosam quae ab, ea rerum blanditiis.
+                Eveniet officiis tempora culpa, ullam ex molestias ad laborum quidem obcaecati molestiae dolor
+                voluptatibus nesciunt. Soluta, error sed! Laboriosam veritatis aliquam dolor corporis pariatur
+                exercitationem quod perspiciatis placeat, esse dolorum neque temporibus repellat nam, sunt voluptatum
+                commodi nisi totam quo? Molestiae hic facere repudiandae ut quod at commodi, voluptatum ipsam odit quis
+                accusantium temporibus eveniet dignissimos ipsa explicabo reprehenderit libero culpa omnis facilis,
+                necessitatibus eligendi numquam? Aperiam harum quidem quos blanditiis. Recusandae natus praesentium
+                excepturi soluta, magnam beatae, cupiditate ducimus inventore laboriosam voluptatum fugit rerum sunt.
+                Dolor, distinctio ratione. Obcaecati, rerum illum.</p>
         </section>
+        <!-- CONTACT SECTION START -->
+        <section data-aos="flip-left" id="contact">
+            <h2 id="title3">CONTACT</h2>
 
+            <div class="w3-col m4 w3-padding">
+                <article class="w3-card w3-border-black">
+                    <div>
+                        <h3 class="w3-center">1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente earum doloremque aut quibusdam harum necessitatibus molestias corporis. Tempora totam asperiores recusandae qui nemo atque cupiditate tempore, quisquam officia blanditiis repellat!
+                        Laboriosam asperiores ipsum, ducimus facilis vero voluptatibus illum neque soluta, hic aliquid veniam et impedit voluptatum aperiam. Incidunt possimus cumque perspiciatis sapiente hic adipisci accusantium! Nam libero nisi velit doloremque!</p>
+                        
+                    </div>
+                </article>
+            </div>
 
-        <section id="contact">
-            <h1>Contact</h1>
+            <div class="w3-col m4 w3-padding">
+                <article class="w3-card w3- border-black">
+                    <div>
+                        <h3>2</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque tempora amet, animi ipsam
+                        quis iusto. Dolore dolores exercitationem fugit, natus expedita fugiat sapiente, sint totam
+                        consequuntur illum voluptatibus aperiam itaque.
+                        Itaque inventore at mollitia soluta praesentium ducimus dolor consectetur saepe architecto
+                        incidunt. A illo hic consequatur ullam inventore, laudantium necessitatibus error quae corrupti
+                        vel pariatur atque tenetur possimus maiores obcaecati?</p>
+                    </div>
+                </article>
+            </div>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et in id sunt voluptates impedit molestiae eaque
-                nemo sequi non repellat inventore tempore nesciunt fuga, veniam aliquid iusto quibusdam deserunt
-                nostrum?
-                Maxime eum aperiam sit asperiores suscipit reprehenderit optio tempore recusandae velit dolores quasi
-                totam vitae, molestiae provident enim repellat magni nesciunt reiciendis soluta facere aut. Aperiam
-                cumque assumenda magnam error!
-                Illo animi vitae quam esse ex! Fugiat enim vitae, tempore facilis minima, delectus laborum, ut ratione
-                assumenda quae neque sit qui itaque! Ipsa voluptatum neque illo dolores inventore dicta impedit.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quia ex nesciunt explicabo? Quasi odit
-                libero magnam, quisquam temporibus optio delectus corrupti tenetur. Error vero saepe magni ut, deleniti
-                eius.
-                Eligendi perferendis voluptates consequuntur tenetur quaerat quae possimus explicabo? Modi libero
-                dignissimos aspernatur, sequi quasi adipisci maiores numquam esse aliquam quos laboriosam officiis
-                reiciendis. Eius, id quo? Repudiandae, sequi neque.
-                Pariatur architecto ratione est odio facilis. Excepturi ut, quam itaque suscipit explicabo
-                reprehenderit, ad similique, tempora assumenda error nostrum quae tenetur minus sed earum eaque
-                laudantium odio inventore eligendi ducimus.
-                Possimus nostrum consectetur fuga ut soluta! Unde fugiat perferendis iusto repellat hic incidunt
-                inventore dolor natus, magni eius soluta sunt dolores, nihil excepturi a. Doloribus odit aut quod
-                numquam officiis.
-                Illo impedit molestias, cupiditate dolorum dolore itaque ab soluta deserunt consectetur esse eaque sint,
-                corporis error sed cumque, quasi obcaecati? Eum consequuntur eaque beatae deserunt eligendi nemo alias
-                quos quam!
-                Odio molestias laborum hic! Cum ipsam praesentium omnis est dicta culpa ipsum quasi sequi accusantium
-                magnam consequatur, alias quis ab, nobis perferendis voluptate distinctio sit minima, officia totam
-                fugit. Quod!
-                Nulla, ipsam accusamus sunt natus soluta officia minus, quibusdam veritatis harum enim aliquid molestias
-                praesentium! Culpa veritatis amet nesciunt saepe suscipit voluptas. Vitae tempora mollitia excepturi
-                laudantium esse nisi eaque?
-                Quibusdam consequuntur eaque atque nostrum cum. Laborum omnis similique eius ex rem iusto, dolore porro
-                amet harum tempore, animi provident expedita, totam sequi dignissimos repudiandae architecto neque. Ad,
-                in assumenda!
-                Pariatur incidunt fuga ut sint hic laudantium praesentium sit iusto nulla maiores possimus, illum
-                veritatis consectetur explicabo? Aut harum quis reiciendis delectus voluptates sequi, aliquam minima, id
-                quidem soluta explicabo?
-                Ab, architecto. Dicta tempore nesciunt, necessitatibus voluptatem consectetur doloribus adipisci ratione
-                ullam ipsum fugit atque perspiciatis eos cum. Quasi sint eaque deserunt nihil sit? Nam commodi corporis
-                accusamus sit ipsa.</p>
+            <div class="w3-col m4 w3-padding">
+                <article class="w3-card w3- border-black">
+                    <div>
+                        <h3>3</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptatem odio ea, itaque ab
+                        recusandae dolor quo quod, fugit labore assumenda saepe nam deleniti ipsum sint consequatur.
+                        Voluptates, quia? Doloribus.
+                        Aspernatur, atque. Provident tempore architecto a dolorem, amet deserunt deleniti vel mollitia
+                        aliquid suscipit dignissimos pariatur officia ipsa doloremque dolor magni! Quam repudiandae
+                        voluptates ratione, deserunt sunt esse qui atque?</p>
+                    </div>
+                </article>
+            </div>
+
 
         </section>
-
     </main>
+    <!-- MAIN END -->
+    <!-- FOOTER START -->
+    <footer class="footer" data-aos="flip-up">
+        <div class="container">
+            <div class="foot-coloumn">
+                <div class="footer-col">
+                    <h4>My Mobile Website</h4>
+                    <ul>
 
-    <footer></footer>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Follow-us</h4>
+                    <div class="Social-links">
+
+                        <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Adress</h4>
+                    <div class="Adress">
+
+                        <div class="CCI">
+                            <p>36 Rue Sergent Michel Berthert</p>
+                            <p>69009 Lyon</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </footer>
+    <!-- FOOTER END -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
+
+
+
         function toogleNavbar() {
             var nav = document.getElementById("mobileNav");
             nav.classList.toggle("w3-show");
-            console.log(nav.classList);
-
+            // console.log(nav.classList);
         }
+        //La touche toogleNavbar selectionne mobileNav et lui applique une classe CSS qui est ici "w3-show" ;
 
+        function homeHideNavbar() {
+            var nav = document.getElementById("mobileNav");
+            if (nav.classList.contains("w3-show")) {
+                nav.classList.remove("w3-show");
+            }
+        }
+        function displayScrollToTopBtn() {
+            var btn = document.getElementById("btnToTop");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.classList.add("w3-show");
+            } else {
+                btn.classList.remove("w3-show");
+            }
+        }
+        window.addEventListener("scroll", function () {
+            displayScrollToTopBtn();
+        });
 
+        AOS.init();
 
     </script>
+
+
 </body>
 
 </html>
